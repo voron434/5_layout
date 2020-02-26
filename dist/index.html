@@ -11,16 +11,21 @@
       color: white;
     }
     .player-container {
-      width: 800px;
+      flex-grow: 1;
+    }
+    .player-wrapper {
+      display: flex;
+      flex-direction: column;
+      width:800px;
       height: 600px;
-      box-shadow: 0 0 10px black;
+      box-shadow: 0 0 20px black;
     }
   </style>
 </head>
 <body>
-  <div id="player">
+  <div id="player" class="player-wrapper">
     <div class="js-video-container player-container"></div>
-    <div style="background-color: black;width:800px">
+    <div style="background-color: black;">
       <button class="js-play-button player-button"><i class="fa fa-play" aria-hidden="true"></i></button>
       <button class="js-pause-button player-button"><i class="fa fa-pause" aria-hidden="true"></i></button>
     </div>
